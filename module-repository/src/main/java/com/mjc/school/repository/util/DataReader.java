@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class DataReader {
+    public static void main(String[] args) {
+        System.out.println(read("author.txt"));
+    }
     public static List<String> read(String fileName) {
         List<String> data = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new InputStreamReader(
